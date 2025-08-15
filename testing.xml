@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+    <test name="Selenium Tests">
+        <classes>
+            <class name="seleniumpkg.Test1"/>
+            <class name="seleniumpkg.FacebookLoginTest"/>
+            <class name="seleniumpkg.FacebookLoginTestNG"/>
+        </classes>
+    </test>
+</suite>
