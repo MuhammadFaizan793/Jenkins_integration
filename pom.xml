@@ -48,6 +48,12 @@
                     <includes>
                         <include>**/*Test.java</include>
                     </includes>
+					 <properties>
+                <property>
+                    <name>usedefaultlisteners</name>
+                    <value>false</value>
+                </property>
+            </properties>
                        <suiteXmlFiles>
                     <suiteXmlFile>testng.xml</suiteXmlFile>
                      </suiteXmlFiles>
@@ -56,3 +62,4 @@
         </plugins>
     </build>
 </project>
+
