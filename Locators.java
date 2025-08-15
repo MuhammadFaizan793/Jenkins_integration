@@ -39,6 +39,8 @@ public class Locators {
 		// Explicit wait ( wait until element found
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+		System.out.println("This is locator testing file");
 		
 	
 		
@@ -67,3 +69,4 @@ public class Locators {
 	}
 
 }
+
