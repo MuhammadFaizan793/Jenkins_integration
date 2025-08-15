@@ -1,31 +1,31 @@
 package seleniumpkg;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 
 public class FacebookLoginTest {
 
     WebDriver driver;
 
-    @Before
+    @BeforeMethod
     public void setUp() {
-       WebDriver driver =  new ChromeDriver();
         driver = new ChromeDriver();
-        Snippet.openUrl(driver, Path.FACEBOOK_URL);
+        driver.get("https://facebook.com");
+        driver.manage().window().maximize();
     }
 
     @Test
-    public void testLogin() {
-        driver.findElement(By.id("email")).sendKeys("test@gmail.com");
-        driver.findElement(By.id("pass")).sendKeys("test@gmail.com");
-        driver.findElement(By.xpath("//button[contains(@class,'_6lth')]")).click();
+    public void loginTest() {
+        driver.findElement(By.id("email")).sendKeys("testuser");
+        driver.findElement(By.id("pass")).sendKeys("password");
+        driver.findElement(By.name("login")).click();
     }
 
-    @After
+    @AfterMethod
     public void tearDown() {
         driver.quit();
     }
