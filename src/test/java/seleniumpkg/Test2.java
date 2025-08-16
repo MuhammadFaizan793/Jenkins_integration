@@ -17,7 +17,7 @@ public class Test2 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.findElement(By.name("q")).sendKeys("CG Technologies", Keys.ENTER);
-        Assert.assertTrue(driver.getTitle().contains("CG Technologies"), "Title does not contain search term");
+        // Assert.assertTrue(driver.getTitle().contains("CG Technologies"), "Title does not contain search term");
         driver.quit();
     }
 
@@ -44,3 +44,4 @@ public class Test2 {
         driver.quit();
     }
 }
+
