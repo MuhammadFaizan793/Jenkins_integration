@@ -14,7 +14,7 @@ public class Test2 {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://google.com");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 
         driver.findElement(By.name("q")).sendKeys("CG Technologies", Keys.ENTER);
         // Assert.assertTrue(driver.getTitle().contains("CG Technologies"), "Title does not contain search term");
@@ -26,7 +26,7 @@ public class Test2 {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://facebook.com");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 
         // Assert.assertTrue(driver.findElement(By.name("login")).isDisplayed(), "Login button not visible");
         driver.quit();
@@ -37,12 +37,13 @@ public class Test2 {
         ChromeDriver driver = new ChromeDriver();
         driver.get("https://youtube.com");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
 
         driver.findElement(By.name("search_query")).sendKeys("Selenium Automation", Keys.ENTER);
 //        Assert.assertTrue(driver.getTitle().contains("Selenium Automation"), "Search did not work as expected");
         driver.quit();
     }
 }
+
 
 
