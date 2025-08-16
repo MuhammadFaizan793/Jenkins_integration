@@ -21,9 +21,11 @@ public class Test1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
 		driver.findElement(By.name("q")).sendKeys("CG Technologies", Keys.ENTER);
 		// System.out.print(driver.getTitle());
+		driver.quit();
 		
 
 	}
 
 }
+
 
