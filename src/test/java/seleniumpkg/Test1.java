@@ -20,6 +20,7 @@ public class Test1 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
 		driver.findElement(By.name("q")).sendKeys("CG Technologies", Keys.ENTER);
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
 		// System.out.print(driver.getTitle());
 		driver.quit();
 		
@@ -27,5 +28,6 @@ public class Test1 {
 	}
 
 }
+
 
 
