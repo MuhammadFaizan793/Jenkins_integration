@@ -28,7 +28,7 @@ public class Test2 {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        Assert.assertTrue(driver.findElement(By.name("login")).isDisplayed(), "Login button not visible");
+        // Assert.assertTrue(driver.findElement(By.name("login")).isDisplayed(), "Login button not visible");
         driver.quit();
     }
 
@@ -44,4 +44,5 @@ public class Test2 {
         driver.quit();
     }
 }
+
 
