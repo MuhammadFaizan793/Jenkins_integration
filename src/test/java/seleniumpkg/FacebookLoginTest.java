@@ -13,8 +13,10 @@ public class FacebookLoginTest {
 
     @BeforeMethod
     public void setUp() {
-        driver = new ChromeDriver(); // no shadowing
-        Snippet.openUrl(driver, Path.FACEBOOK_URL);
+        ChromeDriver driver = new ChromeDriver();
+        driver.get("https://facebook.com");
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Test
@@ -31,3 +33,4 @@ public class FacebookLoginTest {
         }
     }
 }
+
