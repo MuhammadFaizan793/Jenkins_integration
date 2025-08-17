@@ -23,12 +23,15 @@ public class Test1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
 		// System.out.print(driver.getTitle());
 		System.out.println("Test passed");
+		System.out.println("Test passed");
+		
 		driver.quit();
 		
 
 	}
 
 }
+
 
 
 
